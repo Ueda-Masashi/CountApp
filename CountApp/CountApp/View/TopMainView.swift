@@ -10,6 +10,8 @@ import UIKit
 import PGFramework
 
 protocol TopMainViewDelegate: NSObjectProtocol {
+    // プロトコルに追加
+    func pushButton()
 }
 
 extension TopMainViewDelegate {
@@ -28,6 +30,12 @@ class TopMainView: BaseView {
     @IBOutlet weak var pushButton: UIButton!
     
 
+    @IBAction func pushButton(_ sender: UIButton) {
+        if let delegate = delegate {
+            // デリゲートにして渡す
+            delegate.pushButton()
+        }
+    }
     
 }
 

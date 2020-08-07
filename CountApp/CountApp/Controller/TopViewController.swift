@@ -11,6 +11,7 @@ import PGFramework
 
 // MARK: - Property
 class TopViewController: BaseViewController {
+    @IBOutlet weak var mainView: TopMainView!
 }
 
 
@@ -21,6 +22,8 @@ class TopViewController: BaseViewController {
 extension TopViewController {
     override func loadView() {
         super.loadView()
+        // デリゲートをセット
+        mainView.delegate = self
     }
     
     override func viewDidLoad() {
@@ -33,7 +36,10 @@ extension TopViewController {
 }
 
 // MARK: - Protocol
-extension TopViewController {
+extension TopViewController: TopMainViewDelegate {
+    func pushButton() {
+        print("ボタンを押した時の動作を書く")
+    }
 }
 
 // MARK: - method
