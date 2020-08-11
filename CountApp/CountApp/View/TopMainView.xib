@@ -18,12 +18,32 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PushButtonBackgroundImageView" translatesAutoresizingMaskIntoConstraints="NO" id="xlg-be-sOA">
-                    <rect key="frame" x="9.5" y="133.5" width="356" height="400"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BuckGroundPushButton2" translatesAutoresizingMaskIntoConstraints="NO" id="eXV-Mc-o1u">
+                    <rect key="frame" x="-62.5" y="83.5" width="500" height="500"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSd-yy-45E">
-                    <rect key="frame" x="138" y="284" width="99" height="99"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bgl-Np-ntm">
+                    <rect key="frame" x="37" y="541" width="25" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rdu-8j-MKz">
+                    <rect key="frame" x="94" y="567" width="100" height="100"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Button"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="50"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSd-yy-45E">
+                    <rect key="frame" x="146" y="292" width="82" height="82"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="82"/>
                     <state key="normal" title="●">
                         <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
@@ -31,30 +51,19 @@
                         <action selector="pushedButton:" destination="-1" eventType="touchUpInside" id="4Jd-4K-dLl"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bgl-Np-ntm">
-                    <rect key="frame" x="201" y="535" width="132" height="112"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="51"/>
-                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="xlg-be-sOA" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.95" id="0dG-lx-uTS"/>
-                <constraint firstItem="xlg-be-sOA" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="7f9-2e-Pgk"/>
-                <constraint firstItem="xlg-be-sOA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HIc-aK-jow"/>
-                <constraint firstItem="vSd-yy-45E" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="L60-nw-40l"/>
-                <constraint firstItem="vSd-yy-45E" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.148426" id="RHa-O2-sdC"/>
-                <constraint firstItem="vSd-yy-45E" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.264" id="bUh-Qw-hS1"/>
-                <constraint firstItem="vSd-yy-45E" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="nUp-WA-pgT"/>
-                <constraint firstItem="xlg-be-sOA" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.6" id="pKL-03-knT"/>
+                <constraint firstItem="eXV-Mc-o1u" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="1.33333" id="6ns-pP-Uqf"/>
+                <constraint firstItem="eXV-Mc-o1u" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7dZ-lN-2aq"/>
+                <constraint firstItem="eXV-Mc-o1u" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="XI4-mV-o9F"/>
+                <constraint firstItem="eXV-Mc-o1u" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.749625" id="k7R-cF-dzA"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="138.40000000000001" y="130.88455772113943"/>
+            <point key="canvasLocation" x="136.80000000000001" y="129.98500749625188"/>
         </view>
     </objects>
     <resources>
-        <image name="PushButtonBackgroundImageView" width="301.5" height="346"/>
+        <image name="BuckGroundPushButton2" width="350" height="350"/>
     </resources>
 </document>
